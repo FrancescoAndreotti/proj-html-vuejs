@@ -94,6 +94,10 @@ export default {
 
   .card {
     padding: 30px;
+    transition: transform 2s;
+    &:hover {
+      transform: translateY(-20px);
+    }
 
     h2 {
       margin-bottom: 20px;

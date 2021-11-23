@@ -93,10 +93,16 @@ export default {
       background-color: #0e272d;
     }
   }
+
   .card {
     background-color: #19191f;
     padding: 30px;
     border-radius: 10px;
+    transition: transform 2s;
+    &:hover {
+      transform: translateY(-20px);
+    }
+
     i {
       color: $primary-green;
       font-size: 30px;

@@ -12,6 +12,9 @@ $secondary-green: #daeced;
   text-transform: uppercase;
   border: none;
   border-radius: 5px;
+  &:hover{
+    background-color: #002b2b;
+  }
 }
 
 .my-btn-secondary{
@@ -21,4 +24,7 @@ $secondary-green: #daeced;
   padding: 6px 18px;
   text-transform: uppercase;
   border-radius: 5px;
+  &:hover{
+    background-color: $primary-green;
+  }
 }
