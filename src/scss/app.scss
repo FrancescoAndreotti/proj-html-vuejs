@@ -1,0 +1,24 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~font-awesome/css/font-awesome.min.css";
+
+$primary-green: #038483;
+$light-green: #daeced;
+
+
+.my-btn-primary{
+  color: white;
+  background-color: $primary-green;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+}
+
+.my-btn-secondary{
+  color: white;
+  background: none;
+  border: solid 2px $primary-green;
+  padding: 6px 18px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}

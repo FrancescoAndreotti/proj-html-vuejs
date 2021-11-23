@@ -1,5 +1,7 @@
 <template>
-  <div id="app"><Header></Header></div>
+  <div id="app">
+    <Header></Header>
+  </div>
 </template>
 
 <script>
@@ -13,7 +15,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~bootstrap/scss/bootstrap";
+@import "@/scss/app.scss";
 /* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
