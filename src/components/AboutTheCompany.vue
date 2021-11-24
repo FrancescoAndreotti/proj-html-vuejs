@@ -94,9 +94,9 @@ export default {
 
   .card {
     padding: 30px;
-    transition: transform 2s;
+    transition: transform 1s;
     &:hover {
-      transform: translateY(-20px);
+      transform: translateY(-10px);
     }
 
     h2 {

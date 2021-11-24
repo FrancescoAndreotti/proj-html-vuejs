@@ -16,14 +16,20 @@
         <div class="row row-cols-3">
           <div class="col" v-for="(card, i) in cards" :key="i">
             <div class="card">
-              <span v-if="card.title === `Professional`">Most Popular</span>
-              <i :class="card.icon"></i>
-              <h3>{{ card.title }}</h3>
-              <span>{{ card.price }}</span>
+              <span v-if="card.title === `Professional`" class="popular"
+                >Most Popular</span
+              >
+              <i :class="card.icon" class="text-center fs"></i>
+              <h3 class="text-center">{{ card.title }}</h3>
+              <span class="price text-center">{{ card.price }}</span>
               <ul>
                 <li v-for="(future, e) in card.futures" :key="e">
-                  {{ future.future }}
-                  <i :class="future.value ? `fa fa-check` : `fa fa-times`"></i>
+                  <div class="d-flex justify-content-between">
+                    {{ future.future }}
+                    <i
+                      :class="future.value ? `fa fa-check` : `fa fa-times`"
+                    ></i>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -140,6 +146,51 @@ h2 {
     color: $primary-green;
     background-color: $secondary-green;
     padding: 0 10px;
+  }
+}
+
+.card {
+  padding: 40px 40px 20px 40px;
+  position: relative;
+  transition: transform 1s;
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  .popular {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: white;
+    background-color: $primary-green;
+    width: 55px;
+    font-size: 12px;
+    border-radius: 0 15px 15px 0;
+    line-height: 13px;
+    padding: 5px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  .fs {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .price {
+    color: $primary-green;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  i {
+    color: $primary-green;
   }
 }
 </style>

@@ -98,9 +98,9 @@ export default {
     background-color: #19191f;
     padding: 30px;
     border-radius: 10px;
-    transition: transform 2s;
+    transition: transform 1s;
     &:hover {
-      transform: translateY(-20px);
+      transform: translateY(-10px);
     }
 
     i {
