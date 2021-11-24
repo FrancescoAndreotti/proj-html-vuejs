@@ -13,9 +13,12 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid">
-      <div class="container img-container">
+    <div class="container-fluid position-relative">
+      <div class="container">
         <div class="row row-col-2">
+          <div class="img-container">
+            <img src="../assets/img/about-3.jpg" alt="" class="img-fluid" />
+          </div>
           <div class="col about">
             <div class="my-5">
               <h6 class="text-uppercase">about the network</h6>
@@ -49,9 +52,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
-            <img src="../assets/img/about-3.jpg" alt="" class="img-fluid" />
-          </div>
+          <div class="col"></div>
         </div>
       </div>
     </div>
@@ -115,8 +116,15 @@ export default {
   }
 }
 .img-container {
-  margin-right: 0px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  overflow: hidden;
 }
+
 .about {
   padding-top: 40px;
   padding-bottom: 40px;
