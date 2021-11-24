@@ -5,6 +5,7 @@
     <Pricing></Pricing>
     <News></News>
     <Newsletter></Newsletter>
+    <Form></Form>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Services from "./Services.vue";
 import Pricing from "./Pricing.vue";
 import Newsletter from "./Newsletter.vue";
 import News from "./News.vue";
+import Form from "./Form.vue";
 export default {
   components: {
     AboutTheCompany,
@@ -21,6 +23,7 @@ export default {
     Pricing,
     Newsletter,
     News,
+    Form,
   },
 };
 </script>
